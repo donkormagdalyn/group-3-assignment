@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+</head>
+<body>
+    <h3>Grade Student Scores</h3>
+    <form>
+        <input type="number" name="score" id="score" />
+        <button onclick="gradeScore()" >Grade Score</button>
+       
+    </form>
+</body>
+<script>
+
+        function gradeScore(){
+            console.log("helo")
+            var score = document.getElementById("score").value;
+
+            if(score >= 81 && score <= 100 ){
+                 alert('Grade : A');
+            }
+
+            else if(score >= 70 && score <= 80 ){
+                    alert('Grade : B');
+            }
+
+            else if(score >= 50 && score <= 69 ){
+                  alert('Grade : C');
+            }
+
+            else if(score >= 0 && score <= 49 ){
+                    alert('Grade : F');
+            }
+
+            else{
+                alert('Enter a Valid Score');
+            }
+            
+        }
+</script>
+</html>
