@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exams</title>
+    <link rel="stylesheet" type="text/css" href="you/style.css">
+</head>
+<body>
+    <h1>Grade Checker</h1>
+    <form>
+        <div>
+           <td class="top"> Enter Score:</td>
+           <td>
+            <input type="number" placeholder= "enter score" id="score">
+           </td>
+        </div>
+        <div class="button"> <br>
+       <tr>
+           <td>
+           <button type ="button" onclick="Send();"> Submit </button>
+           </td>
+       </tr>
+       </div>
+   </form>
+</body>
+<script>
+    function Send(){
+        var score =document.getElementById ("score").value;
+
+        if (score >= 81 && score <= 100 ){
+            alert("Grade A");
+        }
+        else if(score >= 70 && score <= 80){
+            alert("Grade B");
+        }
+        else if(score >= 50 && score <=69 ){
+            alert("Grade C");
+        }
+        else if(score >= 0 && score <=49){
+            alert("Grade F");
+        }
+        else{
+            alert("invalid Input");
+        }
+
+    }
+</script>
+</html>

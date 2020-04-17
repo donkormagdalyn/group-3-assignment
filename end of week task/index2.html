@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 13</title>
+</head>
+<body>
+    <form>
+    <div>
+        <br><label>Password</label></br>
+    <input type="Password" placeholder="Enter password" onkeyup="myView()" id="password">
+    </div>
+    <div>
+        <br><label>Confirm Password</label></br>
+    <input type="Password" placeholder="repeat password"onkeyup="myView()" id="confirmpassword">
+    </div>
+    
+    <button type="button" > Submit </button>
+    </form>
+</body>
+<script>
+
+function myView(){
+    var password = document.getElementById("password").value;
+    var confirmpassword = document.getElementById("confirmpassword").value;
+
+    if (password == confirmpassword) {
+            alert("match")
+        } 
+        else {
+            alert( "not match")
+        }
+    }
+
+
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11 </title>
+</head>
+<body>
+    <h4> Calculator</h4>
+
+
+</body>
+<script>
+    
+    var num = prompt("enter value");
+    var den = prompt("enter value");
+    
+    class Calculate{
+        constructor(num, den){
+            this.num = num;
+            this.den = den;
+        }
+
+        Sumadd(){
+                return this.num + this.den;
+            }
+
+        Summul(){
+                return this.num * this.den;
+            }
+        Sumdiv(){
+            return this.num / this.den;
+            }
+        Sumsub(){
+            return this.num - this.den;
+            }
+        }        
+           
+    var total = new Calculate(num,den);
+    alert(total.Sumadd());
+    alert(total.Summul());
+    alert(total.Sumdiv());
+    alert(total.Sumsub());
+
+</script>
+</html> 
